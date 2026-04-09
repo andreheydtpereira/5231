@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manutenção Prometeon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+<header class="simple-top-header"><img src="./logo-prometeon.png" class="simple-top-logo" alt="Manutenção Prometeon"></header>
+
+
+
+  <main class="page">
+
+    <section class="carousel-section carousel-section-perfect">
+      <button id="carouselPrev" class="carousel-nav" type="button">‹</button>
+
+      <div class="carousel-shell">
+        <div id="mainCarouselTrack" class="carousel-track">
+          <article class="func-card active card-dashboard" data-card="dashboard">
+            
+            <div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">VISÃO GERAL</div>
+              <div class="func-badge">dashboard</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-number" id="dashboardMainNumber">0</div>
+              <div class="func-label">PENDÊNCIAS ABERTAS</div>
+
+              <div class="func-mini-grid">
+                <button id="btnDashboardUPGR" class="func-mini kpi-setor-btn" type="button" aria-label="Filtrar setor UPGR">
+                  <strong id="kpiUPGR">0</strong>
+                  <span>UPGR</span>
+                </button>
+                <button id="btnDashboardUPA" class="func-mini kpi-setor-btn" type="button" aria-label="Filtrar setor UPA">
+                  <strong id="kpiUPA">0</strong>
+                  <span>UPA</span>
+                </button>
+              </div>
+
+              <div class="func-desc">
+                Clique em UPGR ou UPA para abrir abaixo as pendências do setor.
+              </div>
+
+              <button id="btnAbrirDashboard" class="btn btn-primary func-open" type="button">
+                Abrir dashboard
+              </button>
+            </div>
+          </article>
+
+          <article class="func-card card-pendencias" data-card="nova-pendencia" data-card-image="assets/abrir-pendencias.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">AÇÃO</div>
+              <div class="func-badge">cadastro</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Cadastrar nova pendência</div>
+              <div class="func-desc">Registrar setor, área, máquina, criticidade, horas e tipo.</div>
+            </div>
+          </article>
+
+          <article class="func-card card-lista" data-card="lista-pendencias">
+            
+            <div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">CONTROLE</div>
+              <div class="func-badge">lista</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Lista de pendências</div>
+              <div class="func-desc">Filtros por setor, área, status, máquina e busca.</div>
+            </div>
+          </article>
+
+          <article class="func-card card-materiais" data-card="materiais" data-card-image="assets/materiais.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">APOIO</div>
+              <div class="func-badge">materiais</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Materiais</div>
+              <div class="func-desc">Módulo reservado para materiais e vínculos técnicos.</div>
+            </div>
+          </article>
+
+          <article class="func-card card-geracao" data-card="geracao" data-card-image="assets/gerar-dia.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">PLANEJAMENTO</div>
+              <div class="func-badge">geração</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Gerar dia / semana</div>
+              <div class="func-desc">Distribuição e revisão do dia por manutentor.</div>
+            </div>
+          </article>
+
+          <article class="func-card card-dia" data-card="dia-manutentor" data-card-image="assets/cadastro-equipe.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">EXECUÇÃO</div>
+              <div class="func-badge">meu dia</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Dia do manutentor</div>
+              <div class="func-desc">Lista das atividades com atualização de status.</div>
+            </div>
+          </article>
+
+
+          <article class="func-card card-usuarios" data-card="usuarios" data-card-image="assets/equipe.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">EQUIPE</div>
+              <div class="func-badge">usuários</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Usuários</div>
+              <div class="func-desc">Gestão de manutentores, gestores, perfis e acessos do sistema.</div>
+            </div>
+          </article>
+
+          <article class="func-card card-config" data-card="regras" data-card-image="assets/configuracoes.png"><div class="card-action-hero"><img class="card-action-hero-img" alt=""></div><div class="func-card-top">
+              <div class="func-tag">REGRAS</div>
+              <div class="func-badge">configuração</div>
+            </div>
+            <div class="func-card-body">
+              <div class="func-title">Configurar prioridades</div>
+              <div class="func-desc">Setor, área, prioridade, geração e dados de teste.</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <button id="carouselNext" class="carousel-nav" type="button">›</button>
+    </section>
+
+    <section id="dashboardSection" class="dashboard-section">
+      <div class="section-box">
+        <div class="section-header">
+          <div>
+            <h2>Pendências do setor</h2>
+            <div id="selectedSectorName" class="sector-name">Selecione UPGR ou UPA no card acima</div>
+            <div class="section-subtitle">
+              Escolha o status para abrir a lista detalhada das pendências.
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-box">
+            <label for="sectorFilter">Setor</label>
+            <select id="sectorFilter">
+              <option value="">Selecione setor</option>
+              <option value="UPGR">UPGR</option>
+              <option value="UPA">UPA</option>
+            </select>
+          </div>
+
+          <div class="filter-box">
+            <label for="areaFilter">Filtrar por área do setor</label>
+            <select id="areaFilter">
+              <option value="">Todas as áreas</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="statusGrid" class="status-grid"></div>
+
+        <div class="action-row">
+          <button id="btnOpenStatusList" class="btn btn-primary" type="button">Ver lista: Abertas</button>
+        </div>
+
+        <div id="statusChipRow" class="chip-row"></div>
+
+        <div id="taskCarouselWrap" class="task-carousel-wrap">
+          <button id="taskPrev" class="carousel-nav small" type="button">‹</button>
+          <div id="taskCarouselTrack" class="task-carousel-track"></div>
+          <button id="taskNext" class="carousel-nav small" type="button">›</button>
+        </div>
+
+        <div id="taskDots" class="carousel-dots"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="state.js"></script>
+  <script src="carousel.js"></script>
+  <script src="dashboard.js"></script>
+  <script src="tasks.js"></script>
+  <script src="app.js"></script>
+
+<script id="patch-5199-native-scroll">
+document.addEventListener('DOMContentLoaded', function(){
+  var shell = document.querySelector('.carousel-shell');
+  var track = document.getElementById('mainCarouselTrack');
+  if(shell && track){
+    shell.style.overflowX = 'auto';
+    shell.style.scrollSnapType = 'x mandatory';
+    shell.style.webkitOverflowScrolling = 'touch';
+    track.style.transform = 'none';
+    track.style.minHeight = 'unset';
+    track.style.width = 'max-content';
+    Array.from(track.children).forEach(function(card){
+      card.style.scrollSnapAlign = 'center';
+    });
+    var startX = 0;
+    shell.addEventListener('scroll', function(){
+      var cards = Array.from(track.children);
+      if(!cards.length) return;
+      var shellRect = shell.getBoundingClientRect();
+      var center = shell.scrollLeft + shellRect.width/2;
+      var best = 0, bestDist = Infinity;
+      cards.forEach(function(card, idx){
+        var cx = card.offsetLeft + card.offsetWidth/2;
+        var d = Math.abs(cx - center);
+        if(d < bestDist){ bestDist = d; best = idx; }
+      });
+      cards.forEach(function(card, idx){ card.classList.toggle('active', idx === best); });
+    }, {passive:true});
+  }
+});
+</script>
+
+
+
+
+<script id="card-image-loader">
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.func-card[data-card-image]').forEach(function(card){
+    const img = card.querySelector('.card-action-hero-img');
+    const hero = card.querySelector('.card-action-hero');
+    if(img && hero){
+      img.src = card.getAttribute('data-card-image');
+      img.addEventListener('error', function(){ hero.style.display = 'none'; });
+    } else if(hero){
+      hero.style.display = 'none';
+    }
+  });
+});
+</script>
+
+</body>
+</html>
